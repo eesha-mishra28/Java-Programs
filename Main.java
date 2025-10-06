@@ -288,4 +288,58 @@ class Main{
   }
 }*/
 
+/*import java.util.Scanner;
+import java.util.*;
+class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    String str= sc.nextLine();
+    int n= str.length();
+    int sum=0;
+    String[] arr= str.split("");
+    if(arr[n-3].equals("E") && arr[n-2].equals("N") && arr[n-1].equals("D")){
+      for(int i=0;i<n;i++){
+        int ascii = (int)str.charAt(i);
+        sum= sum+ascii;
+      }
+      System.out.println(sum);
+    }
+  }
+}*/
 
+/*import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    String str= sc.nextLine();
+    String[] arr= str.split("\\|\\|");
+    String s1=arr[0];
+    String s2=arr[1];
+    String s3=arr[2];
+    System.out.println("Name:" + s1);
+    System.out.println("Age:" + s2);
+    System.out.println("City:" + s3);
+  }
+}*/
+
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    char ch= sc.next().charAt(0);
+    if(ch>='a' && ch<='z'){
+      System.out.println("Type: letter");
+      System.out.println("Case: lower case");
+    } 
+    
+else if((ch>='A' && ch<='Z')){
+      System.out.println("Type: letter");
+      System.out.println("Case: upper case");
+    }
+    else if(ch>='0' && ch<='9'){
+      System.out.println("Type: digit");
+    }
+    else{
+      System.out.println("Type: special character");
+    }
+  }}
