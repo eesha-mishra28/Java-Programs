@@ -322,9 +322,8 @@ class Main{
   }
 }*/
 
-import java.util.Scanner;
-class Main{
-  public static void main(String[] args){
+/*import java.util.Scanner;
+class Main{public static void main(String[] args){
     Scanner sc= new Scanner(System.in);
     char ch= sc.next().charAt(0);
     if(ch>='a' && ch<='z'){
@@ -343,3 +342,164 @@ else if((ch>='A' && ch<='Z')){
       System.out.println("Type: special character");
     }
   }}
+*/
+
+/*import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int n= sc.nextInt();
+    int count=0;
+    if(n%2==0){
+      int i=1;
+      while(n>0){
+        n=n/2;
+        count++;
+        i++;
+      }
+      System.out.println(count);
+    }
+    else{
+      int i=1;
+      while(n>0){
+        n=3*n-1;
+        count++;
+        i++;
+      }
+      System.out.println(count);
+    }
+  }
+}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    char n= sc.next().charAt(0);
+    switch(n){
+      case 'A': System.out.println("Excellent"); break;
+      case 'B': System.out.println("Good"); break;
+      case 'C': System.out.println("Average"); break;
+      case 'D': System.out.println("below average"); break;
+      case 'F': System.out.println("Fail"); break;
+      default: System.out.println("Invalid grade");
+    }
+  }
+}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int n= sc.nextInt();
+    if(n>0){
+      if(n%2==0){
+        System.out.println("Positive even number");
+      }
+      else{
+        System.out.println("Positive odd number");
+      }
+    }
+    else if(n<0){
+      if (n % 2 == 0) {
+        System.out.println("Negative even number");
+      } else {
+        System.out.println("Negative odd number");
+      }
+    }
+    else{
+      System.out.println("Zero");
+
+  }}}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    String player1= sc.nextLine();
+    String player2= sc.nextLine();
+    if(player1.equals("Rock") && player2.equals("Scissors")){
+      System.out.println("Player 1 wins");
+    }
+    else if(player1.equals("Scissors") && player2.equals("Paper")){
+      System.out.println("Player 1 wins");
+    }
+    else if(player1.equals("Paper") && player2.equals("Rock")){
+      System.out.println("Player 1 wins");
+    }
+    else if(player2.equals("Rock") && player1.equals("Scissors")){
+      System.out.println("Player 2 wins");
+    }
+    else if(player2.equals("Scissors") && player1.equals("Paper")){
+      System.out.println("Player 2 wins");
+    }
+    else if(player2.equals("Paper") && player1.equals("Rock")){
+      System.out.println("Player 2 wins");
+    }
+    else if(player1.equals(player2)){
+      System.out.println("It's a tie");
+    }
+    else{
+      System.out.println("Invalid input");
+    }
+
+  }}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int x= sc.nextInt();
+    int y= sc.nextInt();
+    if(x>0 && y>0){
+      System.out.println("First quadrant");
+    }
+    else if(x>0 && y<0){
+      System.out.println("Fourth quadrant");
+    }
+    else if(x<0 && y>0){
+      System.out.println("Second quadrant");
+    }
+    else if(x<0 && y<0){
+      System.out.println("Third quadrant");
+    }
+    else if(x==0 && y!=0){
+      System.out.println("y axis");
+    }
+    else if(y==0 && x!=0){
+      System.out.println("x axis");
+    }
+    else{
+      System.out.println("Origin");
+    }
+  }
+}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    char x= sc.next().charAt(0);
+    if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u'||
+       x=='A'||x=='E'||x=='I'||x=='O'||x=='U'){
+      System.out.println("Vowel");
+    }
+    else{
+      System.out.println("Consonant");
+    }
+
+  }
+}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int x= sc.nextInt();
+    int y= sc.nextInt();
+    int z= x*y;
+    long a= x*y;
+    System.out.println(z);
+    System.out.println(a);
+  }
+}*/
