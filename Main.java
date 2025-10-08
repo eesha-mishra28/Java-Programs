@@ -160,27 +160,27 @@ class Main{
   }}*/
 
 //all divisor of number
-  /*class Main{
-  public static void main(String[]args){
-    int n=10;
-    for(int i=1;i<=n;i++){
-      if(n%i==0){
-        System.out.println(i);
-      }
+/*class Main{
+public static void main(String[]args){
+  int n=10;
+  for(int i=1;i<=n;i++){
+    if(n%i==0){
+      System.out.println(i);
     }
-  }}*/
+  }
+}}*/
 
 //power of a number
-  /*class Main{
-    public static void main(String[]args){
-      int a=3;
-      int b=3;
-      int result=1;
-      for(int i=1;i<=b;i++){
-        result*=a;
-      }
-      System.out.println(result);
-    }}*/
+/*class Main{
+  public static void main(String[]args){
+    int a=3;
+    int b=3;
+    int result=1;
+    for(int i=1;i<=b;i++){
+      result*=a;
+    }
+    System.out.println(result);
+  }}*/
 
 //set bits in a number
 /*import java.util.*;
@@ -520,7 +520,7 @@ public class Main{
     System.out.println("the 10th digit is:" + X%11);
 }}*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main{
   public static void main(String[] args){
     Scanner sc= new Scanner(System.in);
@@ -531,4 +531,76 @@ public class Main{
     }
     else{
       System.out.println("Permission denied");    }
-  }}
+  }}*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    int sum = 0;
+    while(true){
+    Scanner sc= new Scanner(System.in);
+    int x= sc.nextInt(); 
+    if(x== -1){
+      break;
+    }
+    else if(x%2==0){
+      continue;
+    }
+    else{
+      sum+=x;
+    }
+  }
+  System.out.println(sum);
+}}*/
+
+/*import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    for (int i = 1; i <= n; i++) {
+      for (int j = n - 1; j >= 1; j--) {
+        System.out.print(" ");
+      }
+      for (int k = 1; k <= i; k++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+    sc.close();
+  }
+}*/
+/*import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+  for(int i=1;i<10;i++){
+    if(i==6){
+      System.exit(0);
+    }
+    System.out.println(i);
+    } 
+  System.out.println("End loop");
+  }
+}*/
+
+/*import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int[] arr= new int[n];
+    for(int i=0; i<n; i++){
+      arr[i]=sc.nextInt();
+    }
+    int target= sc.nextInt();
+    for(int i=0;i<arr.length;i++){
+      if(arr[i]==target){
+        System.out.println(i);
+        break;
+      }
+      else{
+        System.out.println("NOT FOUND");
+      }
+    }
+}}*/
