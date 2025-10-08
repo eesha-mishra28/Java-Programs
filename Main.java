@@ -503,3 +503,32 @@ public class Main{
     System.out.println(a);
   }
 }*/
+
+/*import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int x= sc.nextInt();
+    int X=0;
+    int n=1;
+    String num= Integer.toString(x);
+    String[] arr= num.split("");
+    for(int i=1;i<arr.length ; i++){
+      X+=(Integer.parseInt(arr[i])*n);
+      n++;
+    }
+    System.out.println("the 10th digit is:" + X%11);
+}}*/
+
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int x= sc.nextInt();
+    int y=28;
+    if((x&y)==y){
+      System.out.println("Permission granted");
+    }
+    else{
+      System.out.println("Permission denied");    }
+  }}
