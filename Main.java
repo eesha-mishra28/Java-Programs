@@ -604,3 +604,98 @@ public class Main {
       }
     }
 }}*/
+
+/*import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String n = sc.nextLine();
+    try{
+      Integer a=Integer.parseInt(n,16);
+      System.out.println(a);
+    }
+    catch(NumberFormatException e){
+      System.out.println("INvalid input");
+    }
+  }
+}*/
+
+/*import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String s = sc.nextLine();
+
+    try {
+      int a = Integer.parseInt(s);
+      System.out.println("Integer: " + a);
+    } catch (NumberFormatException e1) {
+      try {
+        double b = Double.parseDouble(s);
+        System.out.println("Double: " + b);
+      } catch (NumberFormatException e2) {
+        System.out.println("String: " + s);
+      }
+    }
+  }
+}*/
+
+/*import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String s = sc.nextLine();
+    int n = s.length();
+    boolean flag = true;
+    for (int i = 0; i < n / 2; i++) {
+        if (s.charAt(i) != s.charAt(n-1-i)) {
+          flag = false;
+          break;
+        }
+      }
+      if(flag){
+        System.out.println("palindrome");
+      }
+      else{
+        System.out.println("not a palindrome");
+      }
+      }
+  }*/
+
+ /*class Main {
+  public static void main(String[] args) {
+    int a = 6;
+    int b = 9;
+    while (b != 0) {
+      int temp = b;
+      b = a % b;
+      a = temp;
+    }
+    System.out.println(a);
+  }
+}*/
+
+ /*class Main {
+   public static void main(String[] args) {
+     double a = 0.1;
+     System.out.println("MULTIPLICATION:" + a * 10);
+     for (int i = 1; i <= 10; i++) {
+       a += a;
+     }
+     System.out.println("LOOP:" + a);
+
+   }
+ }*/
+
+/*import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int a=10;
+    if(true){
+      int a= 20;
+      System.out.println(a);
+    }
+    System.out.println(a);
+  }
+}*/
