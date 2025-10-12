@@ -699,3 +699,38 @@ class Main {
     System.out.println(a);
   }
 }*/
+/*import java.util.Arrays;
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    String str1= sc.nextLine();
+    String str2= sc.nextLine();
+    char[] arr1= str1.toCharArray();
+    char[] arr2= str2.toCharArray();
+    Arrays.sort(arr1);
+    Arrays.sort(arr2);
+    if(str1.length()!=str2.length()){
+      System.out.println("Not Anagram");
+      return;
+    }
+    if(Arrays.equals(arr1,arr2)){
+      System.out.println("anagram");
+    }
+    else{
+      System.out.println("Not Anagram");
+    }
+  }
+}*/
+
+/*public class Main {
+  public static void main(String[] args) {
+    String str = "EESHA";
+    StringBuilder s = new StringBuilder(str);
+    for (int i = s.length() - 1; i >= 0; i--) {
+      s.append(s.charAt(i));
+    }
+    s.delete(0, s.length() / 2);
+    System.out.println(s);
+  }
+}*/
