@@ -734,3 +734,80 @@ class Main{
     System.out.println(s);
   }
 }*/
+
+/*import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int[] arr = new int[1000];
+    for (int i = 0; i < n; i++) {
+      arr[i] = sc.nextInt();
+    }
+    int[] result = new int[1000];
+    for (int i = 0; i < arr.length; i++) {
+      int product = 1;
+      for (int j = 0; j < n; j++) {
+        if (i != j) {
+          product *= arr[j];
+        }
+      }
+      result[i] = product;
+    }
+    for (int k = 0; k < n; k++) {
+      System.out.print(result[k] + " ");
+    }
+  }
+}*/
+
+/*class Thing {
+  private static int count = 0;
+
+  public Thing() {
+    count++;
+  }
+  public static int getCount() {
+    return count;
+  }
+}
+public class Main {
+  public static void main(String[] args) {
+    Thing c = new Thing();
+    Thing c1 = new Thing();
+    Thing c2 = new Thing();
+
+    System.out.println("Total objects created: " + Thing.getCount());
+  }
+}*/
+
+/*class Bankaccount {
+   double balance;
+   
+   public Bankaccount(double balance){
+       this.balance = balance;
+   }
+   void deposit(double deposit){
+       this.balance= balance;
+       balance+=deposit;
+       System.out.println("After depositon:" + balance);
+   }
+   void withdrawal(double withdrawal){
+       this.balance= balance;
+       if(withdrawal> balance){
+           System.out.println("Insufficient account");
+       }
+       else{
+           balance-= withdrawal;
+           System.out.println("After withdrawal:" + balance);
+       }
+   }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bankaccount c= new Bankaccount(1000.00);
+        c.deposit(1000);
+        c.withdrawal(1000);
+        c.withdrawal(7000);
+    }
+}*/
