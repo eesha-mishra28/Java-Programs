@@ -811,3 +811,24 @@ public class Main {
         c.withdrawal(7000);
     }
 }*/
+
+
+/*class Main{
+    public static void main(String[] args) {
+        Dog c= new Dog();
+        c.speak();
+    }
+}
+
+class Animal{
+    void speak(){
+        System.out.println("Animal created");
+    }
+}
+
+class Dog extends Animal{
+    void speak(){
+    super.speak();
+    System.out.println("Dog barks");
+}
+}*/
