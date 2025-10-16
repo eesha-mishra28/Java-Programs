@@ -832,3 +832,21 @@ class Dog extends Animal{
     System.out.println("Dog barks");
 }
 }*/
+
+/*class Main {
+    public static void main(String[] args) {
+        Child c= new Child();
+        c.method();
+    }
+}
+
+class Parent{
+    String name= "mishra";
+}
+class Child extends Parent{
+    String name= "eesha";
+    void method(){
+        System.out.println("Child "+ this.name);
+        System.out.println("Parent "+ super.name);
+    }
+} */
